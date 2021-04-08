@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Ola Lordis</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <style>
+           
+            :root{
+                
+                font-family: Arial, Helvetica, sans-serif;
+
+                --color_oscuro:rgb(136, 73, 73);
+                --color_oscuro_transparente:rgba(61, 135, 149, 0.602);
+                --blanco:#fff;
+                --rojo:rgb(14, 245, 168);
+                font-size: 1vw;
+            }
+            
+            
+            *{  padding:0px;
+                margin:0px;
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            .clase {display: block;
+				  margin-left: auto;
+				  margin-right: auto;}
+
+            ol, ul {
+		        list-style: none;
+	        }
+            
+           
+            .centrado_bloque{
+               margin-left: auto;
+               margin-right: auto; 
+            }
+          
+            header{
+                position:fixed;
+                top:0px;
+                left:0px;
+                background-color: var(--color_oscuro);
+                min-height: 3.5rem;
+                width: 100%;
+                z-index: 2000;
+            }
+            #footer{background-color: rgb(98, 94, 94);}
+            p {text-align: center;}
+
+            header{position: fixed;}
+            
+                        header div{
+                            position: fixed;
+                            top: 0.25rem;
+                            left:2rem;
+                            color:var(--rojo);
+                            font-size: 1.5rem;
+                                                       
+                        }
+                        header nav{
+                            position:fixed;
+                            top:1rem;
+                            right:5rem; 
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                            
+                            
+                        }
+                          
+                        header nav ul{
+                            text-align: right;
+                        }                  
+                        header nav ul > li{
+                            display: inline-block;
+                            vertical-align: top;
+                            text-align: left;
+                            min-width: 10rem;
+
+                        }
+
+                        header nav ul li > ul{
+                            display: none;
+                        }
+
+                        header nav ul li:hover ul{
+                            display: block;
+                            text-align: center;
+                        }
+                        header nav ul li:hover li{
+                            display:block;
+                            background-color: var(--color_oscuro);
+                        }
+                        
+                       
+                        .submenu:hover ul {
+                            display: block;                 
+                        }
+
+                        .submenu:hover ul > li{
+                            display: block;
+                            background-color: var(--color_oscuro);
+                        }
+                        
+                        nav a{
+                            color: var(--blanco);
+                        }
+                        nav a:hover{
+                            background-color: var(--blanco);
+                            color:var(--color_oscuro);
+                        }
+
+            .hero{
+                background-image:  url("/medios/prueba.png");
+                background-color: #cccccc;
+                height: 750px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: center;
+            }
+            .hero div{
+                position:relative;
+                top:20rem;
+                right:50rem;
+                background-color: var(--color_oscuro_transparente);
+                color:var(--blanco);
+                font-size: 1.25rem;
+                max-width: 30%;
+                padding:3em;
+            }
+            .hero:hover div{
+                left:0;
+            }
+            .hero div>p{
+                padding-top: 3em;
+                columns:2;
+            }
+            h1{font-family: 'Times New Roman', Times, serif;}
+        
+            h2 {font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                font-variant: small-caps; 
+                text-align: center}
+
+            h2:hover{font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                     font-variant: small-caps; 
+                     background-color: rgb(223, 205, 136);
+                     text-align: center;}
+            main{
+                margin-left: auto;
+                margin-right: auto;
+                top: 50rem;
+                left:10%;
+                min-width: 80%;
+                max-width: 80%;
+                z-index: 2000;
+            }
+
+            main article{
+                min-height: 300px;
+                min-width:50%;
+                background-color: var(--color_oscuro_transparente);
+                padding-top: 10px;
+                padding-bottom: 10px;
+             }
+
+            main article section{
+                min-height: 100px;
+                margin: 10px;
+               
+                font-size: 1.5rem;
+            }
+            
+            #actividades li{
+                display: inline-block;
+                background-color: var(--blanco);
+                color:var(--color_oscuro);
+                margin:2em;
+
+            }
+            #actividades li:hover{
+                background-color: var(--color_oscuroo);
+                color:var(--blanco);
+                margin:2em;
+
+            }
+          ul li {border-style: solid ;}
+            
+            
+
+        </style>
+    </head>
+    <body>
+        
+        
+        <header>
+            <div class="contendor-fijo-izquierda">
+                <h1>Feliz cumple wapa.</h1>
+            </div>
+           
+            <nav class="contendor-fijo-derecha">
+                <ul>
+                  
+                    <li class="submenu"><a href="">No entres aquí.</a>
+                        <ul>
+                            <li><a href="#ejercicios-1">Aquí menos.</a></li>
+						<li><a href="#ejercicios-2"> Aquí ni se te ocurra.</a></li>
+						<li><a href="#ejercicios-3">Realmente puedes entrar a todos.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="regalo">Akí sí.</a></li>
+                    <li><a href="#yo">Aquí pa ver fotos nuestras.</a></li>
+                </ul>
+            </nav>
+        </header>  
+        
+    
+            
+            <div class="hero">
+                <div>
+                    <h2>Soy consciente de lo cutre que parece esto.</h2>
+                    <p>Si quieres ver como se hace esto haz click derecho en cualquier lado y dale a ver código fuente de la página, te sigo dejando contemplar esta maravilla cutre..</p>
+                </div>
+                
+            </div>
+        
+
+        
+               
+        <main>
+
+            
+            <article id="actividades">
+                <section id="ejercicios-1">
+                    <h2>Ejercicios introducción HTML</h2> 
+                    <ul>
+                    <li><a href="html-ejerc1-intro">Ejercicio 1</a> <br></li>
+                    <li><a href="html-ejerc2-poema">Ejercicio 2</a> <br></li>
+                    <li><a href="html-ejerc3-enfasis">Ejercicio 3</a> <br></li>
+                    <li><a href="html-ejerc4-listas">Ejercicio 4</a> <br></li>
+                    <li><a href="html-ejerc5-utf-8">Ejercicio 5</a> <br></li>
+                    <li><a href="html-ejerc6-img">Ejercicio 6</a> <br></li>
+                    <li><a href="html-ejerc7-viaje">Ejercicio 7</a> <br></li>
+                    </ul>
+                   
+                   </section>
+                <section id="ejercicios-2">
+                    <h2>Ejercicios introducción CSS</h2> 
+                    <ul>
+                        <li><a href="html-ejerc8-color">Ejercicio 8</a> <br></li>
+                        <li><a href="html-ejerc9-criatura">Ejercicio 9</a> <br></li>
+                        <li><a href="html-ejerc10-criatura2">Ejercicio 10</a> <br></li>
+                        <li><a href="html-ejerc11-formato">Ejercicio 11</a> <br></li>
+                        <li><a href="html-ejerc12-Olafs">Ejercicio 12</a> <br></li>
+                        <li><a href="html-ejerc13-clases">Ejercicio 13</a> <br></li>
+                        <li><a href="html-ejerc14-desafio-clases">Ejercicio 14</a> <br></li>
+                        <li><a href="html-ejerc15-selectores">Ejercicio 15</a> <br></li>
+                        <li><a href="html-ejerc16">Ejercicio 16</a> <br></li>
+                    </ul>  
+                              
+                </section>
+                <section id="ejercicios-3">
+                    <h2>Ejercicios de más etiquetas</h2> 
+                    <ul>
+                        <li>  <a href="html-ejerc18-vinculos">Ejercicio 18</a> <br></li>
+                        <li><a href="html-ejerc19-vinculos-internos">Ejercicio 19</a> <br></li>
+                        <li> <a href="html-ejerc20-tabla">Ejercicio 20</a> <br></li>
+                        <li> <a href="html-ejerc21-proyecto-recetas">Ejercicio 21</a> <br></li>
+                        <li> <a href="html-ejerc24-videos">Ejercicio 24</a> <br></li>
+                       
+                    </ul>               
+                </section>
+        
+            </article> 
+            
+            <article id="yo">
+                <section><h2>Sobre mi.</h2> 
+                    <p>  Me llamo Teo Hernández y desde pequeño los ordenadores y los videojuegos han sido mi pasión, también me gusta mucho hacer deporte y estar con mis amigos. </p></section>
+                    <img class="clase" src="medios/yo.JPG" alt="yo" height="200">
+            </article>
+        
+           
+
+        </main>
+    
+        
+        <footer id="footer"> 
+           <img class="clase" src="medios/logo.png" alt="Logo" height="90">
+            <p id="texto-final">Teo Hernández
+            </p>            
+        </footer>
+
+    </body>
+</html>
